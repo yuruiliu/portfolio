@@ -23,6 +23,8 @@
 
   .sidebar-inner { gap: 20px; }
 
+  .sidebar-top { align-items: center; }
+
   .brand { display: flex; align-items: center; gap: 16px; margin-bottom: 4px; }
   .avatar { width: 52px; height: 52px; font-size: 22px; margin-bottom: 0; border-radius: 14px; }
   .name { font-size: 19px; }

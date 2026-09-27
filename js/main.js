@@ -70,4 +70,28 @@
     window.addEventListener("scroll", onScroll, { passive: true });
     onScroll();
   }
+
+  /* ---------- 深浅色主题切换 ---------- */
+  const rootEl = document.documentElement;
+  const themeToggle = document.getElementById("themeToggle");
+  const THEME_KEY = "theme";
+
+  function applyTheme(theme) {
+    rootEl.setAttribute("data-theme", theme);
+    if (!themeToggle) return;
+    const isDark = theme === "dark";
+    themeToggle.setAttribute("aria-pressed", String(isDark));
+    themeToggle.title = isDark ? "切换到浅色模式" : "切换到深色模式";
+  }
+
+  if (themeToggle) {
+    const saved = localStorage.getItem(THEME_KEY);
+    applyTheme(saved === "dark" ? "dark" : "light");
+
+    themeToggle.addEventListener("click", () => {
+      const next = rootEl.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      localStorage.setItem(THEME_KEY, next);
+      applyTheme(next);
+    });
+  }
 })();
