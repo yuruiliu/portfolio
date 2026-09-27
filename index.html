@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="个人作品集，展示个人介绍、技能方向与项目作品">
+  <title>小锐 · 个人作品集</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+  <div class="layout">
+
+    <!-- 左侧：个人介绍、导航、技能 -->
+    <aside class="sidebar" id="sidebar">
+      <div class="sidebar-inner">
+        <div class="brand">
+          <div class="avatar" aria-hidden="true">
+            <span class="avatar-char">锐</span>
+          </div>
+          <h1 class="name">小锐</h1>
+          <p class="role">软件工程学生 · AI 辅助开发</p>
+        </div>
+
+        <nav class="nav" aria-label="主导航">
+          <a href="#projects" class="nav-link">作品</a>
+          <a href="#about" class="nav-link">关于我</a>
+          <a href="#contact" class="nav-link">联系</a>
+        </nav>
+
+        <div class="skills">
+          <h3 class="skills-title">技能方向</h3>
+          <div class="skills-tags">
+            <span class="tag">C语言</span>
+            <span class="tag">JavaScript</span>
+            <span class="tag">TypeScript</span>
+            <span class="tag">HTML / CSS</span>
+            <span class="tag">微信小程序</span>
+            <span class="tag">大语言模型</span>
+          </div>
+        </div>
+
+        <div class="sidebar-foot">
+          <p>广州 · 软件工程在读 · 欢迎交流</p>
+        </div>
+      </div>
+    </aside>
+
+    <!-- 右侧：主内容区域 -->
+    <main class="main">
+
+      <!-- Hero 简介 -->
+      <section class="hero" id="top">
+        <p class="hero-kicker">你好，我是小锐</p>
+        <h2 class="hero-title">专注 AI 辅助开发<br>与应用创新</h2>
+        <p class="hero-desc">
+          软件工程在读，主要关注 AI 辅助开发与大语言模型应用。
+          喜欢把技术转化为实用的产品，这里展示了我的一些项目与探索。
+        </p>
+      </section>
+
+      <!-- 项目作品 -->
+      <section class="section projects" id="projects">
+        <header class="section-head">
+          <h2 class="section-title">项目作品</h2>
+          <p class="section-note">部分精选作品 · 持续更新中</p>
+        </header>
+        <!-- 项目由 main.js 根据 projects.js 数据动态渲染 -->
+        <div class="project-list" id="projectList"></div>
+      </section>
+
+      <!-- 关于我 -->
+      <section class="section about" id="about">
+        <header class="section-head">
+          <h2 class="section-title">关于我</h2>
+        </header>
+        <p class="about-text">
+          我是小锐，广州软件学院软件工程专业在读，目前主要关注 AI 辅助开发与大语言模型技术。
+          平时使用 C语言、JavaScript、TypeScript 与 HTML/CSS 进行开发，也在持续学习前后端开发、
+          数据可视化和 AI 应用构建，并乐于把想法落地成作品。
+        </p>
+        <ul class="about-facts">
+          <li>专注 AI 辅助开发与大语言模型应用</li>
+          <li>掌握 Web 前端与微信小程序开发</li>
+          <li>熟练运用数据可视化构建可读的大屏</li>
+          <li>追求简洁、清晰、可维护的代码</li>
+        </ul>
+      </section>
+
+      <!-- 联系方式 -->
+      <section class="section contact" id="contact">
+        <header class="section-head">
+          <h2 class="section-title">联系方式</h2>
+        </header>
+        <p class="contact-desc">如果你有合作机会、技术交流或想聊聊项目，欢迎随时联系我。</p>
+        <div class="contact-links">
+          <a class="contact-item" href="mailto:xiaorui@example.com">
+            <span class="contact-label">邮箱</span>
+            <span class="contact-value">xiaorui@example.com</span>
+          </a>
+          <a class="contact-item" href="https://github.com/xiaorui-dev" target="_blank" rel="noopener">
+            <span class="contact-label">GitHub</span>
+            <span class="contact-value">github.com/xiaorui-dev</span>
+          </a>
+          <a class="contact-item" href="https://xiaorui.dev" target="_blank" rel="noopener">
+            <span class="contact-label">个人主页</span>
+            <span class="contact-value">xiaorui.dev</span>
+          </a>
+          <div class="contact-item">
+            <span class="contact-label">微信</span>
+            <span class="contact-value">xiaoruizi</span>
+          </div>
+          <div class="contact-item">
+            <span class="contact-label">所在地</span>
+            <span class="contact-value">中国 · 广州</span>
+          </div>
+        </div>
+      </section>
+
+      <footer class="main-foot">
+        <p>© 2026 · 小锐 · 广州软件学院</p>
+      </footer>
+    </main>
+
+  </div>
+
+  <script src="js/projects.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

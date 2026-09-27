@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#11151f"/>
+      <stop offset="1" stop-color="#20283b"/>
+    </linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#ef5b4c"/>
+      <stop offset="1" stop-color="#ff9a76"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="600" fill="url(#bg)"/>
+  <text x="160" y="220" font-family="Georgia, serif" font-size="150" fill="none" stroke="url(#accent)" stroke-width="3">B</text>
+  <rect x="250" y="150" width="220" height="9" rx="4.5" fill="#fff" opacity="0.8"/>
+  <rect x="250" y="180" width="160" height="7" rx="3.5" fill="#fff" opacity="0.35"/>
+  <rect x="250" y="240" width="300" height="6" rx="3" fill="#fff" opacity="0.18"/>
+  <rect x="250" y="262" width="280" height="6" rx="3" fill="#fff" opacity="0.13"/>
+  <rect x="250" y="284" width="200" height="6" rx="3" fill="#fff" opacity="0.09"/>
+  <text x="250" y="390" font-family="sans-serif" font-size="22" fill="#ffb49c" letter-spacing="3">个人博客系统</text>
+</svg>
